@@ -39,6 +39,47 @@ class Driver:
     
 
 
+class Passenger:
+    ##initialize the parameters needed when a passenger account is created
+    def __init__(self,passenger_name,age,sex):
+        self.passenger_name = passenger_name
+        self.age = age
+        self.sex = sex
+        
+        self.passenger_ID =  {
+                "name": self.passenger_name,
+                "age": self.age,
+                "sex": self.sex
+            }
+        # varaible to store HISTORY of trips
+        self.trips_passenger = []
+
+    #method for creating a trip; having a starting point and a stop(destination)
+    def create_trip(self, passenger_start, passenger_stop):
+        if isinstance(passenger_start, str) and isinstance(passenger_stop, str):
+            trip = {
+                "start": passenger_start,
+                "stop": passenger_stop
+            }
+            self.trips_passenger.append(trip)
+
+            return f"Trip added: {passenger_start} → {passenger_stop}"
+        else:
+            return "Enter valid starting point and destination"
+    
+    def view_trips(self): # to view trip history
+        return(self.trips_passenger)
+    
+
+    
+
+
+
+P = Passenger("Marcus",23,"Male")
+t1 = P.create_trip("USA","Iran")
+t2 = P.create_trip("Abeka","Lapaz")
+
+
     
 D = Driver("Marcus","GR-2398","blue",23,"female")
 trip1 = D.create_trip("Accra","Kumasi")
