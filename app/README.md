@@ -27,7 +27,8 @@ Trip creation for drivers and passengers
 Trip matching system
 Basic simulation of ride-sharing workflow
 
-#Improvements#
+#Improvements
+
 Real-time matching system
 Mobile or web interface
 User authentication
