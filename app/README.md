@@ -17,6 +17,7 @@ The system checks for matching trips
 If a match is found, the driver can accept the passenger
 
 #HOW TO RUN THE APP
+
 To run the simulation of the app:
 RUN python app.py
 
