@@ -1,4 +1,4 @@
-## Ride Sharing App
+## RIDE SHARING APP
 
 ## Description
 
