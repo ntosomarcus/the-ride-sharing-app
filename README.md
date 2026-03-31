@@ -30,7 +30,10 @@ Basic simulation of ride-sharing workflow
 
 ## Improvements
 
-Real-time matching system
-Mobile or web interface
-User authentication
-Payment integration
+- Real-time matching system
+  
+- Mobile or web interface
+  
+- User authentication
+  
+- Payment integration
