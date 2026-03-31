@@ -19,7 +19,7 @@ If a match is found, the driver can accept the passenger
 ## HOW TO RUN THE APP
 
 To run the simulation of the app:
-RUN python app.py
+## RUN python app.py
 
 ## NB: This is currently a simulation. The full application is still under development.
 
