@@ -9,26 +9,26 @@ Passenger
 
 Both the driver and the passenger create trips separately. When a passenger's trip matches a driver's trip, the driver can choose to pick up the passenger.
 
-#How the app Works
+## How the app Works
 
 Drivers create a trip (route, timing, etc.)
 Passengers create a trip request
 The system checks for matching trips
 If a match is found, the driver can accept the passenger
 
-#HOW TO RUN THE APP
+## HOW TO RUN THE APP
 
 To run the simulation of the app:
 RUN python app.py
 
 ## NB: This is currently a simulation. The full application is still under development.
 
-#Features
+## Features
 Trip creation for drivers and passengers
 Trip matching system
 Basic simulation of ride-sharing workflow
 
-#Improvements
+## Improvements
 
 Real-time matching system
 Mobile or web interface
