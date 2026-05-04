@@ -1,39 +1,30 @@
-## RIDE SHARING APP
+## Ride Sharing App
 
-## Description
+A minimal but real ride-sharing backend simulation with:
 
-This project is a ride-sharing application that works similarly to Bolt or Uber, but with a key difference in how trips are matched.
-The system involves two main entities:
-Driver
-Passenger
+- Driver/passenger registration
+- Trip creation with persistence (`app/data.json`)
+- Automatic route matching (driver/passenger with same start + stop)
+- Match acceptance flow
 
-Both the driver and the passenger create trips separately. When a passenger's trip matches a driver's trip, the driver can choose to pick up the passenger.
+## Run
 
-## How the app Works
+```bash
+cd /workspace/the-ride-sharing-app
+python app/app.py
+```
 
-Drivers create a trip (route, timing, etc.)
-Passengers create a trip request
-The system checks for matching trips
-If a match is found, the driver can accept the passenger
+## Menu
 
-## HOW TO RUN THE APP
+1. Register user
+2. Create trip
+3. List driver trips
+4. List passenger trips
+5. Find matches
+6. Accept match
+7. Exit
 
-To run the simulation of the app:
-RUN python app.py
+## Notes
 
-## NB: This is currently a simulation. The full application is still under development.
-
-## Features
-Trip creation for drivers and passengers
-Trip matching system
-Basic simulation of ride-sharing workflow
-
-## Improvements
-
-- Real-time matching system
-  
-- Mobile or web interface
-  
-- User authentication
-  
-- Payment integration
+- Location matching is currently exact-text match after lowercase normalization.
+- Storage is JSON-file based for easy local usage.
